@@ -10,7 +10,7 @@ La app consiste en una simple biblioteca, posee los modelos de Libro y Autor. La
 ## Ejecutar el proyecto
 ### Clonar el repositorio
 ```bash 
-git clone 
+git clone https://github.com/fedemaximovicz/actividad_testing.git
 ```
 ```bash
 cd actividad_testing
