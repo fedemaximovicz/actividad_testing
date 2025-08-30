@@ -1,0 +1,16 @@
+# .coveragerc file
+
+[run]
+source = .
+omit =
+    */migrations/*
+    */tests/*
+    */test_*.py
+    */venv/*
+    manage.py
+    *settings.py
+    *wsgi.py
+    *asgi.py
+
+[report]
+show_missing = True

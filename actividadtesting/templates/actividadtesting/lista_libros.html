@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Libros</title>
+</head>
+
+<body>
+    <h1>Library</h1>
+    <a href="{% url 'agregar-libro' %}">Agregar Libros</a>
+    <ul>
+        {% for libro in libros %}
+        <li>
+            <a href="{% url 'libro-detail' libro.id %}">
+                {{ libro.titulo }} by {{ libro.autor.nombre }}
+            </a>
+        </li>
+        {% empty %}
+        <li>No hay libros disponibles.</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

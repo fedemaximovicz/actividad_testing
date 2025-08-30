@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ libro.titulo }}</title>
+</head>
+
+<body>
+    <h1>{{ libro.titulo }}</h1>
+    <p>Author: {{ libro.autor.nombre }}</p>
+    <p>Year: {{ libro.publicacion_year }}</p>
+    <p>Status: {{ libro.disponible|yesno:"Disponible,No disponible" }}</p>
+    <a href="{% url 'lista-libros' %}">Volver a la lista</a>
+</body>
+
+</html>
